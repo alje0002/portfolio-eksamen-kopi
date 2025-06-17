@@ -1,0 +1,414 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* VARIABLER */
+html {
+  --primary-color: black;
+  /*tekst*/
+  --secondary-color: #fcf7ef;
+  /*body main*/
+  --tredje-color: #ff4815;
+  /*H1 - organge*/
+  --fjerde-color: #24528e;
+  /*mørkeblå*/
+  --femte-color: #5587df;
+  /*lyseblå*/
+  --sjette-color: #ffe3e5;
+  /*lyserød*/
+}
+
+body {
+  background-color: var(--secondary-color);
+  list-style: none;
+}
+
+main {
+  margin: 0 auto;
+}
+
+/************ TEKST START ************/
+h1 {
+  font-family: "Inter", sans-serif;
+  color: var(--tredje-color);
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--femte-color);
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--femte-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 65ch;
+  text-wrap: balance;
+}
+
+/* links */
+a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  max-width: 65ch;
+}
+
+a:hover {
+  color: var(--fjerde-color);
+  transition: color 0.5s ease;
+}
+
+/************ INTRO TEKST START ************/
+
+section {
+  max-width: 1400px;
+  padding: 5% 4% 0 4%;
+}
+
+.tema_tekst {
+  margin: 3% 0%;
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 3%;
+  }
+}
+
+/************ KNAP START ************/
+/* Style the link as a button - fra chat gbt*/
+.knap {
+  display: inline-block;
+  padding: 15px 28px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: var(--femte-color);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+}
+
+.knap:hover {
+  background-color: var(--tredje-color);
+  color: var(--secondary-color);
+  transition: 0.5s ease;
+}
+
+/************ PROJEKT START ************/
+.projekt_kasse {
+  background-color: var(--sjette-color);
+  margin: 5% 4%;
+  padding: 5% 0%;
+  max-width: 1400px;
+}
+
+.projekt_overskrift {
+  text-align: center;
+  align-items: center;
+}
+
+.kasse_3 {
+  background-color: var(--femte-color);
+  border-radius: 30px;
+  margin: 5% 0%;
+  padding: 5% 4%;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+}
+
+.billede-tekst {
+  display: flex;
+  flex-direction: column;
+}
+
+.projekt-text {
+  margin: 3% 1%;
+  color: var(--secondary-color);
+  margin-bottom: 3%;
+}
+
+.website_knapper {
+  display: flex;
+  gap: 20px;
+}
+
+/************ OM MIG START ************/
+.om_mig {
+  max-width: 1400px;
+  margin: 5% 4%;
+
+  p {
+    margin-bottom: 3%;
+  }
+
+  img {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+}
+
+.om_mig_overskrift_billede {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.uddannelse_erfaring_kasse {
+  background-color: var(--sjette-color);
+}
+
+.uddannelse_erfaring_indhold {
+  display: grid;
+  margin: 5% 4%;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.uddannelse_erfaring_tekst {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+hr {
+  border: 1px solid var(--tredje-color);
+}
+
+/************ TABLET VERSION ************/
+/************ TABLET VERSION ************/
+/************ TABLET VERSION ************/
+@media screen and (min-width: 650px) {
+  /************ TEKST START ************/
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+  }
+
+  h2 {
+    font-size: 3.3rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  /* KNAP */
+  .knap {
+    padding: 23px 60px;
+  }
+
+  /************ INTRO TEKST START TABLET ************/
+  section {
+    padding: 5% 5% 0 5%;
+  }
+
+  .tema_tekst {
+    margin: 2% 0%;
+  }
+
+  .tema_tekst p {
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+  }
+
+  /************ PROJEKT START TABLET ************/
+  .projekt_kasse {
+    margin: 5% 5%;
+    padding: 5% 0%;
+  }
+
+  .kasse_3 {
+    display: grid;
+    margin: 4% 0%;
+    padding: 4% 2%;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2%;
+    }
+  }
+
+  /************ OM MIG START TABLET ************/
+  .om_mig {
+    margin: 5% 5%;
+  }
+
+  .om_mig_overskrift_billede {
+    align-items: center;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .uddannelse_erfaring_indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-inline: 4.5%;
+    padding: 5%;
+  }
+}
+
+/************ DESKTOP VERSION ************/
+/************ DESKTOP VERSION ************/
+/************ DESKTOP VERSION ************/
+@media screen and (min-width: 1000px) {
+  /************ TEKST START ************/
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  h2 {
+    font-size: 3.7rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+  }
+
+  /* KNAP DESKTOP */
+  .knap {
+    padding: 23px 60px;
+  }
+
+  /************ INTRO TEKST START DESKTOP ************/
+  section {
+    padding: 5% 7% 0 7%;
+    margin: 0 auto;
+  }
+
+  .tema_tekst p {
+    font-size: 1.5rem;
+  }
+
+  /************ PROJEKT START DESKTOP ************/
+  .projekt_kasse {
+    padding: 5% 7%;
+    margin: 0 auto;
+  }
+
+  .kasse_3 {
+    padding: 5% 6%;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  img {
+    align-self: center;
+  }
+
+  .projekt-text {
+    margin: 3% 3% 3% 13%;
+  }
+
+  /************ OM MIG START DESKTOP ************/
+  .om_mig {
+    margin: 0 auto;
+    padding: 5% 7%;
+  }
+
+  .om_mig_linje {
+    max-width: 50%;
+  }
+
+  .om_mig_overskrift_billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .uddannelse_erfaring_indhold {
+    padding: 5% 7%;
+  }
+
+  .uddannelse_erfaring_tekst {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1800px) {
+    section {
+      padding: 2% 0%;
+    }
+
+    .projekt_kasse {
+      padding: 2% 0%;
+    }
+
+    .om_mig {
+      margin: 0 auto;
+      padding: 2% 0%;
+    }
+  }
+}

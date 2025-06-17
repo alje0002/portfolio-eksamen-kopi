@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Layoutet tilpasses skærmstørrelsen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <!-- favicon -->
+    <link rel="icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/generel.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/forside.css" />
+
+    <!-- Hvad der kommer til at stå i fanen -->
+    <title>Portfolio | Forside</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="myNav" class="overlay">
+        <!-- javascript:void(0) at a tag ikke gør noget/sker noget (at det ikke "klikker") -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="tema2.html">Tema 2 - Grundlæggende Web</a>
+          <a href="tema3.html">Tema 3 - Grundlæggende UX/UI</a>
+          <a href="tema4.html">Tema 4 - Grundlæggende Animation</a>
+          <a href="tema5.html">Tema 5 - Grundlæggende Indhold</a>
+        </div>
+      </div>
+
+      <div class="head_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="billeder/iconer/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div>
+          <span class="menu_tema" onclick="openNav()">Portfolio</span>
+
+          <a href="ommig.html">Om mig</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <h1>PORTFOLIO</h1>
+        <div>
+          <h2 id="navn">ALBERTE LINDEVANG JENSEN</h2>
+          <h2 id="mmd">MULTIMEDIEDESIGN</h2>
+        </div>
+      </article>
+    </main>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

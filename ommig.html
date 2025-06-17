@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Layoutet tilpasses skærmstørrelsen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <!-- favicon -->
+    <link rel="icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/generel.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+
+    <!-- Hvad der kommer til at stå i fanen -->
+    <title>Portfolio | Om mig</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="tema2.html">Tema 2 - Grundlæggende Web</a>
+          <a href="tema3.html">Tema 3 - Grundlæggende UX/UI</a>
+          <a href="tema4.html">Tema 4 - Grundlæggende Animation</a>
+          <a href="tema5.html">Tema 5 - Grundlæggende Indhold</a>
+        </div>
+      </div>
+
+      <div class="head_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="billeder/iconer/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div>
+          <span class="menu_tema" onclick="openNav()">Portfolio</span>
+
+          <a href="ommig.html">Om mig</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="om_mig">
+        <div>
+          <h1>OM MIG</h1>
+          <hr class="om_mig_linje" />
+        </div>
+        <div class="om_mig_overskrift_billede">
+          <div>
+            <p>
+              Jeg hedder Alberte. <br />
+              Jeg er 23 år og læser multimediedesign på KEA.
+              <br />
+              Min interesse for design og teknologi var den primære grund, til at jeg søgte denne uddannelse. Derudover vil jeg gerne udvikle mig indenfor digitalt design og kommunikation samt få erfaring indenfor kodning.
+            </p>
+            <p>
+              På 1. semester er jeg blevet introduceret til opbygningen af en hjemmeside helt fra bunden hvor vi benytter programmet Visual Studio Code til at kode. Jeg har fået kendskab til programmeringssprogene HTML, CSS og Javascript samt
+              designprogrammet Figma, hvor al procesdokumentation laves. Derudover er jeg bl.a. blevet introduceret til Adobe Photoshop, Adobe Illustrator, Adobe After Effects og FileZilla.
+            </p>
+          </div>
+          <img src="billeder/portraet.webp" alt="Portrætbillede af mig" />
+        </div>
+      </div>
+      <div class="uddannelse_erfaring_kasse">
+        <div class="uddannelse_erfaring_indhold">
+          <div class="uddannelse">
+            <h3>UDDANNELSE</h3>
+            <div class="uddannelse_erfaring_tekst">
+              <p>2018-2020</p>
+              <p>Tårnby Gymnasium & HF</p>
+
+              <p>2020</p>
+              <p>Coding Café på IT-Universitetet</p>
+            </div>
+          </div>
+
+          <div class="erfaring">
+            <h3>ERFARING</h3>
+            <div class="uddannelse_erfaring_tekst">
+              <p>2020-2021</p>
+              <p>Frivillig hos Wefood - Folkekirkens Nødhjælp</p>
+
+              <p>2021</p>
+              <p>Covid-19 poder hos Falck</p>
+
+              <p>2021-2024</p>
+              <p>Forsikringsassistent hos Lærerstandens Brandforsikring</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- LINJE -->
+      <hr class="footer_linje" />
+
+      <div class="footer_logo">
+        <a href="index.html">
+          <img src="billeder/iconer/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <p class="footer_navn">ALBERTE LINDEVANG JENSEN</p>
+
+      <p class="kontakt_mig">Kontakt mig:</p>
+      <div class="footer_iconer">
+        <!-- target="_blank" betyder den åbner linket i en ny side -->
+        <a href="https://www.linkedin.com/in/alberte-lindevang-jensen-4917831bb/" target="_blank"> <img src="billeder/iconer/linkedin.svg" alt="linkedin" /></a>
+
+        <a href="mailto:alje0002@stud.kea.dk?"> <img src="billeder/iconer/mail.svg" alt="mail" /></a>
+
+        <a href="tel:+4561300571"> <img src="billeder/iconer/phone.svg" alt="phone" /></a>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

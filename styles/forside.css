@@ -1,0 +1,117 @@
+body,
+header,
+.menu,
+footer {
+  background-color: var(--sjette-color);
+}
+
+main {
+  text-align: center;
+  line-height: 0.8;
+}
+
+article {
+  text-align: center;
+  line-height: 1;
+  margin-top: 5%;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  color: var(--tredje-color);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+#mmd {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  position: absolute;
+  width: 40%;
+  left: -40%;
+
+  animation-name: mmd_kf;
+  transform-origin: center;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+
+  animation-fill-mode: both;
+}
+
+@keyframes mmd_kf {
+  0% {
+    translate: 0% 0%;
+  }
+
+  25% {
+    translate: 174.5% 0%;
+  }
+
+  75% {
+    translate: 174.5% 0%;
+  }
+
+  100% {
+    translate: 400% 0%;
+  }
+}
+
+#navn {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  position: absolute;
+  width: 40%;
+  left: -40%;
+
+  animation-name: navn_kf;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  transform-origin: center;
+  animation-fill-mode: both;
+}
+
+@keyframes navn_kf {
+  0% {
+    translate: 174.5% 0%;
+  }
+
+  15% {
+    translate: 174.5% 0%;
+  }
+
+  40% {
+    translate: 400% 0%;
+  }
+
+  40.1% {
+    translate: 0% 0%;
+  }
+
+  60% {
+    translate: 0% 0%;
+  }
+
+  85% {
+    translate: 174.5% 0%;
+  }
+
+  100% {
+    translate: 174.5% 0%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 11rem;
+  }
+}

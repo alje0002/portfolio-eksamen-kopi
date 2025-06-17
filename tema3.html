@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Layoutet tilpasses skærmstørrelsen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <!-- favicon -->
+    <link rel="icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="billeder/iconer/logo.svg" type="image/x-icon" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/generel.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+
+    <!-- Hvad der kommer til at stå i fanen -->
+    <title>Portfolio | Tema 3</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="tema2.html">Tema 2 - Grundlæggende Web</a>
+          <a href="tema3.html">Tema 3 - Grundlæggende UX/UI</a>
+          <a href="tema4.html">Tema 4 - Grundlæggende Animation</a>
+          <a href="tema5.html">Tema 5 - Grundlæggende Indhold</a>
+        </div>
+      </div>
+
+      <div class="head_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="billeder/iconer/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div>
+          <span class="menu_tema" onclick="openNav()">Portfolio</span>
+
+          <a href="ommig.html">Om mig</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>TEMA 3</h1>
+        <h2>Grundlæggende UX/UI</h2>
+
+        <!-- LINJE -->
+        <hr class="linje" />
+
+        <div class="tema_tekst">
+          <p>
+            I dette tema blev vi undervist i brugergrænseflade (UI) og brugeroplevelse (UX). Vi fokuserede på procesdokumentation herunder research, styletiles, moodboards, idegenerering, skitsering, wireframe og prototype. Vi lavede brugerresearch
+            og tests til at forstå vores målgruppe. Her arbejdede vi med likert-test, 5-sekunders-test og tænke-højt test. Vi lærte at kode et website baseret på vores digitale prototype og layoutdiagram, som vi afslutningsvis testede med
+            lighthouse-test.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJEKT -->
+      <div class="projekt_kasse">
+        <h3 class="projekt_overskrift">PROJEKT</h3>
+
+        <!-- EMNESITE -->
+        <div class="kasse_3">
+          <h4>EMNESITE</h4>
+
+          <div class="billede-tekst">
+            <img src="billeder/temaer/t-3-emnesite_billede.webp" alt="Emnesite billede" />
+
+            <p class="projekt-text">
+              Det afsluttende projekt var et website om et valgfrit emne som skulle præsenteres for en mindre gruppe. Der var fokus på billeder, procesdokumentation i form af research samt wireframes og prototype men også fokus på de tests vi havde
+              fået kendskab til.
+            </p>
+          </div>
+
+          <div class="website_knapper">
+            <a href="https://alberteljensen.dk/tema3/emnesite/index.html" target="_blank" class="knap">SE SITET</a>
+            <a href="https://www.figma.com/design/ZCKe1XOJxiSvWhM7HK30oY/Tema-3---hjemmeside?node-id=0-1&t=MHRa54jJPvR6FJ63-1" target="_blank" class="knap">SE PROCESDOKUMENTAION</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- LINJE -->
+      <hr class="footer_linje" />
+
+      <div class="footer_logo">
+        <a href="index.html">
+          <img src="billeder/iconer/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <p class="footer_navn">ALBERTE LINDEVANG JENSEN</p>
+
+      <p class="kontakt_mig">Kontakt mig:</p>
+      <div class="footer_iconer">
+        <!-- target="_blank" betyder den åbner linket i en ny side -->
+        <a href="https://www.linkedin.com/in/alberte-lindevang-jensen-4917831bb/" target="_blank"> <img src="billeder/iconer/linkedin.svg" alt="linkedin" /></a>
+
+        <a href="mailto:alje0002@stud.kea.dk?"> <img src="billeder/iconer/mail.svg" alt="mail" /></a>
+
+        <a href="tel:+4561300571"> <img src="billeder/iconer/phone.svg" alt="phone" /></a>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+/* Blanding af noget fra undervisning og W3 schools */
+.head_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.head_menu a:hover,
+.menu_tema:hover {
+  color: var(--fjerde-color);
+  transition: color 0.5s ease;
+}
+
+.head_menu a,
+.menu_tema {
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: var(--femte-color);
+  cursor: pointer;
+}
+
+.menu_tema {
+  margin-right: 30px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.7s ease;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--sjette-color);
+  display: block;
+  transition: 0.5s ease;
+  max-width: none;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--fjerde-color);
+  transition: 0.5s ease;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.overlay-content a {
+  font-family: "Playfair Display", serif;
+}
+
+/************ FOOTER START ************/
+footer {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  p {
+    color: var(--femte-color);
+    max-width: none;
+  }
+}
+
+.footer_logo {
+  width: 50px;
+}
+
+.footer_iconer {
+  display: grid;
+  color: var(--femte-color);
+  gap: 14%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 10%;
+}
+
+.footer_linje {
+  margin: 2rem auto;
+  width: 92%;
+}
+
+/************ FOOTER SLUT ************/
+
+@media screen and (min-width: 650px) {
+  .head_menu a,
+  .menu_tema {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .head_menu a,
+  .menu_tema {
+    font-size: 1.7rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+}
