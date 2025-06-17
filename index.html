@@ -30,10 +30,14 @@
 
   <body>
     <header>
+      <!-- Navigations-overlay menu (skjult som standard) -->
       <div id="myNav" class="overlay">
-        <!-- javascript:void(0) at a tag ikke gør noget/sker noget (at det ikke "klikker") -->
+        <!-- javascript:void(0): gør ikke noget, når man klikker - lad JavaScript klare det -->
+        <!-- onclick="closeNav()": når du klikker, så kør funktionen closeNav()" – det er en JavaScript-funktion, som skjuler menuen. -->
+        <!-- &times; er lukkekrydset -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
+          <!-- menupunkter i overlay -->
           <a href="tema2.html">Tema 2 - Grundlæggende Web</a>
           <a href="tema3.html">Tema 3 - Grundlæggende UX/UI</a>
           <a href="tema4.html">Tema 4 - Grundlæggende Animation</a>
@@ -48,6 +52,7 @@
           </a>
         </div>
         <div>
+          <!-- Åbner overlay-menu ved klik-->
           <span class="menu_tema" onclick="openNav()">Portfolio</span>
 
           <a href="ommig.html">Om mig</a>

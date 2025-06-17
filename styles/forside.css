@@ -6,6 +6,7 @@ footer {
 }
 
 main {
+  /* centrerer alt i main */
   text-align: center;
   line-height: 0.8;
 }
@@ -24,44 +25,51 @@ h1 {
   letter-spacing: 0.3rem;
   text-align: center;
 }
-
+/* animation */
 #mmd {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  /* font-size: 40px; */
+  /* Skriftstørrelsen er 2.35% af containerens bredde, justeret efter det smalleste mål (mobil). Teksten tilpasses automatisk små & store skærme. */
+  font-size: 2.35cqw;
   position: absolute;
   width: 40%;
+  /* Starter langt ude til venstre */
   left: -40%;
 
   animation-name: mmd_kf;
-  transform-origin: center;
   animation-duration: 10s;
   animation-iteration-count: 3;
+  /* Animationen kører 3 gange */
   animation-timing-function: linear;
-
+  /* Beholder styles før og efter animation */
   animation-fill-mode: both;
 }
 
+/* Keyframes: animerer fra venstre mod højre og forsvinder. Keyframes bruges til at definere de forskellige stadier for animationen */
 @keyframes mmd_kf {
   0% {
     translate: 0% 0%;
   }
 
+  /* Flytter teksten ind på midten */
   25% {
     translate: 174.5% 0%;
   }
-
+  /* Holder den der lidt tid */
   75% {
     translate: 174.5% 0%;
   }
-
+  /* Skubber teksten ud til højre */
   100% {
     translate: 400% 0%;
   }
 }
-
+/* animation */
 #navn {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  /* font-size: 40px; */
+  /* Skriftstørrelsen er 2.35% af containerens bredde, justeret efter det smalleste mål (mobil). Teksten tilpasses automatisk små & store skærme. */
+  font-size: 2.35cqw;
   position: absolute;
   width: 40%;
   left: -40%;
@@ -70,46 +78,47 @@ h1 {
   animation-duration: 10s;
   animation-iteration-count: 3;
   animation-timing-function: linear;
-  transform-origin: center;
   animation-fill-mode: both;
 }
 
 @keyframes navn_kf {
+  /* Starter på midten */
   0% {
     translate: 174.5% 0%;
   }
-
+  /* Pause */
   15% {
     translate: 174.5% 0%;
   }
-
+  /* Rykker ud til højre */
   40% {
     translate: 400% 0%;
   }
-
+  /* Hopper tilbage */
   40.1% {
     translate: 0% 0%;
   }
-
+  /* Pause i startposition */
   60% {
     translate: 0% 0%;
   }
-
+  /* Tilbage til midten */
   85% {
     translate: 174.5% 0%;
   }
-
+  /* Holder der før næste loop */
   100% {
     translate: 174.5% 0%;
   }
 }
 
+/* Skærme over 650px bred */
 @media screen and (min-width: 650px) {
   h1 {
     font-size: 7rem;
   }
 }
-
+/* Skærme over 1000px bred */
 @media screen and (min-width: 1000px) {
   h1 {
     font-size: 11rem;

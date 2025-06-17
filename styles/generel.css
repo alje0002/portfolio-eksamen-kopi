@@ -6,8 +6,10 @@
 }
 
 img {
+  /* Gør billeder responsive */
   width: 100%;
   height: auto;
+  /* Undgår ekstra mellemrum under billedet */
   display: block;
 }
 
@@ -21,7 +23,7 @@ html {
   /*H1 - organge*/
   --fjerde-color: #24528e;
   /*mørkeblå*/
-  --femte-color: #5587df;
+  --femte-color: #2c6bd6;
   /*lyseblå*/
   --sjette-color: #ffe3e5;
   /*lyserød*/
@@ -33,6 +35,7 @@ body {
 }
 
 main {
+  /* centrerer indhold */
   margin: 0 auto;
 }
 
@@ -76,6 +79,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   max-width: 65ch;
+  /* gør teksten mere læselig ved linjeskift */
   text-wrap: balance;
 }
 
@@ -99,6 +103,7 @@ section {
 }
 
 .tema_tekst {
+  /* top & bund, højre & venstre */
   margin: 3% 0%;
 
   p {
@@ -118,6 +123,7 @@ section {
   background-color: var(--secondary-color);
   color: var(--femte-color);
   border: none;
+  /* runde hjørner */
   border-radius: 100px;
   cursor: pointer;
   transition: 0.5s ease;
@@ -164,6 +170,7 @@ section {
 
 .website_knapper {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -212,6 +219,7 @@ hr {
 /************ TABLET VERSION ************/
 /************ TABLET VERSION ************/
 /************ TABLET VERSION ************/
+/* Skærme over 650px bred */
 @media screen and (min-width: 650px) {
   /************ TEKST START ************/
   h1 {
@@ -289,6 +297,7 @@ hr {
     }
 
     img {
+      /* centrerer billede */
       margin: 0 auto;
     }
   }
@@ -297,6 +306,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    /* start og slut-margin vandret */
     margin-inline: 4.5%;
     padding: 5%;
   }
@@ -305,6 +315,7 @@ hr {
 /************ DESKTOP VERSION ************/
 /************ DESKTOP VERSION ************/
 /************ DESKTOP VERSION ************/
+/* Skærme over 1000px bred */
 @media screen and (min-width: 1000px) {
   /************ TEKST START ************/
   h1 {
@@ -335,6 +346,7 @@ hr {
 
   /************ INTRO TEKST START DESKTOP ************/
   section {
+    /* Top, højre, bund, venstre */
     padding: 5% 7% 0 7%;
     margin: 0 auto;
   }
@@ -361,8 +373,8 @@ hr {
     align-self: center;
   }
 
-  .projekt-text {
-    margin: 3% 3% 3% 13%;
+  .website_knapper {
+    flex-direction: row;
   }
 
   /************ OM MIG START DESKTOP ************/
@@ -396,7 +408,7 @@ hr {
   .uddannelse_erfaring_tekst {
     align-items: center;
   }
-
+  /* Skærme over 1800px bred */
   @media screen and (min-width: 1800px) {
     section {
       padding: 2% 0%;

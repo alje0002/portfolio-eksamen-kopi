@@ -4,7 +4,7 @@ function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
   
-  // Gør at width er 0% (fjerner det igen) - onClick er i html menuen
+  // Lukker menuen ved at sætte bredden tilbage til 0% (fjerner det igen) - onClick er i html menuen
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
